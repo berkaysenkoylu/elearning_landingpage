@@ -485,7 +485,7 @@ body {
   position: relative;
   max-width: 120rem !important;
   margin: 0 auto;
-  background-image: linear-gradient(to top left, rgba(108, 186, 255, 0.5), rgba(4, 41, 74, 0.5)), url(../../img/students_studying.jpeg);
+  background-image: linear-gradient(to top left, rgba(108, 186, 255, 0.5), rgba(4, 41, 74, 0.5)), url(../img/students_studying.jpeg);
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
