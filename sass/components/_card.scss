@@ -1,0 +1,53 @@
+.card {
+    background-color: $color-white;
+    box-shadow: 0.5rem 0.5rem 1rem rgba($color-black, 0.15);
+    padding: 2rem;
+
+    height: min-content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    &-heading {
+        width: 100%;
+        text-align: left;
+        color: $color-black;
+        font-size: 2rem;
+        font-weight: 500;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -3px;
+            left: 0;
+            height: 3px;
+            width: 8rem;
+            background-color: $color-complement-dark-1;
+        }
+    }
+
+    &-paragraph {
+        color: $color-black;
+        font-size: 1.4rem;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+
+        & > span {
+            display: block;
+            margin-top: 1rem;
+        }
+    }
+
+    &-cta {
+        width: 100%;
+    }
+}

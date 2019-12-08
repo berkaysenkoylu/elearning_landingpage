@@ -1,0 +1,205 @@
+.announcements { 
+    background-color: $color-white;
+    padding: 2rem;
+
+    &-heading {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid rgba($color-black, 0.5);
+
+        &__icon {
+            width: 2rem;
+            height: 2rem;
+            margin-right: 1rem;
+            fill: $color-secondary-dark-1;
+        }
+
+        &__text {
+            font-size: 2rem;
+            font-weight: 500;
+            color: $color-secondary-dark-1;
+        }
+    }
+
+    &-body {
+        font-size: 1.4rem;
+
+        &-heading {
+            width: 100%;
+            text-align: left;
+            color: $color-black;
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+        &-paragraph {
+
+            & > a:link, a:visited {
+                font-weight: 700;
+                text-decoration: none;
+                color: $color-secondary-dark-1;
+            }
+        }
+    }
+
+    &-cta {
+
+        &__heading {
+            width: 100%;
+            text-align: left;
+            color: $color-black;
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
+    }
+}
+
+.auth-section {
+
+    &__paragraph {
+        display: block;
+        width: 75%;
+        margin: 0 auto;
+        font-size: 1.4rem;
+    }
+
+    &__cta {
+        width: 75%;
+        margin: 0 auto;
+
+        @media only screen and (max-width: $bp-xsmall) {
+            width: 100%;
+        }
+
+        & > * {
+            &:first-child {
+                margin-right: 3rem;
+
+                @media only screen and (max-width: $bp-xsmall) {
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.course__teaser {
+    margin: 0 3rem;
+    padding: 3rem;
+    padding-left: 5rem;
+    font-size: 1.6rem;
+
+    @media only screen and (max-width: $bp-xsmall) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding: 2rem;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+
+    &--shape {
+        position: relative;
+        width: 15rem;
+        height: 15rem;
+        overflow: hidden;
+        transform: translateX(-3rem) translateY(1rem);
+        border-radius: 50%;
+        float: left;
+
+        @media only screen and (max-width: $bp-xsmall) {
+            transform: translateX(0) translateY(0);
+            margin: 0 auto 2rem auto;
+        }
+
+        @supports (clip-path: circle(50% at 50% 50%)) or (-webkit-shape-outside: circle(50% at 50% 50%)) {
+            -webkit-clip-path: circle(40% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+            -webkit-shape-outside: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);
+            border-radius: none;
+        }
+    }
+
+    &--image {
+        height: 100%;
+        transform: translateX(-3.5rem) scale(1.4);
+        backface-visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    &--caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        // color: $color-white;
+        // text-transform: uppercase;
+        // font-size: 1.7rem;
+        // text-align: center;
+        opacity: 0;
+        transition: all 0.5s;
+        backface-visibility: hidden;
+
+        &-icon {
+            backface-visibility: hidden;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &:hover &--caption {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+
+    &:hover &--image {
+        transform: translateX(-3.5rem) scale(1);
+        filter: blur(3px) brightness(90%);
+    }
+
+    &--text {
+        &-heading {
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 2rem;
+
+            @media only screen and (max-width: $bp-xsmall) {
+                text-align: center;
+            }
+        }
+    }
+
+    &--1 {
+        background-color: rgba($color-primary, 0.15);
+    }
+
+    &--2 {
+        background-color: rgba($color-complement, 0.25);
+    }
+
+    &--3 {
+        background-color: rgba($color-tertiary-dark-2, 0.3);
+    }
+}
+
+.cta-section {
+    &__text {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 1.6rem;
+    }
+}
+
+.more-info-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 1rem;
+
+    & > *, .card {
+        margin-bottom: 0;
+    }
+}

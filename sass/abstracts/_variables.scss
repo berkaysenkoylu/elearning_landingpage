@@ -1,0 +1,35 @@
+// COLORS
+$color-primary: #3499F4;	// Main Primary color */
+$color-primary-light-1: #81C3FF;
+$color-primary-light-2: #6CBAFF;
+$color-primary-dark-1: #05457D;
+$color-primary-dark-2: #04294A;
+
+$color-secondary: #434CF6;	// Main Secondary color (1) */
+$color-secondary-light-1: #8B90FF;
+$color-secondary-light-2: #787FFF;
+$color-secondary-dark-1: #0C1287;
+$color-secondary-dark-2: #090C50;
+
+$color-tertiary: #25F5B6;	// Main tertiary color (2) */
+$color-tertiary-light-1: #77FFD6;
+$color-tertiary-light-2: #61FFCF;
+$color-tertiary-dark-1: #008059;
+$color-tertiary-dark-2: #004C35;
+
+$color-complement: #FFA527;	// Main Complement color */
+$color-complement-light-1: #FFC777;
+$color-complement-light-2: #FFBE61;
+$color-complement-dark-1: #C27100;
+$color-complement-dark-2: #734300;
+
+$color-white: #fff;
+$color-black: #000;
+
+
+// BREAKPOINTS
+$bp-largest: 75em; // 1200px / 16px = 75em
+$bp-large: 62.5em; // 1000px / 16px = 62.5em
+$bp-medium: 50em; // 800px / 16px = 50em
+$bp-small: 37.5em; // 600px / 16px = 37.5em
+$bp-xsmall: 28.125em; // 450px / 16px = 28.125em

@@ -1,0 +1,97 @@
+.body {
+    // Layout
+    display: grid;
+    grid-template-rows: 36rem repeat(2, min-content);
+    grid-template-columns: 1fr;
+
+    // !!!!!!!!!!!!!!!
+    @media only screen and (max-width: $bp-small) {
+        grid-template-rows: 14rem repeat(2, min-content);
+    }
+    
+    position: relative;
+    max-width: 120rem !important;
+    margin: 0 auto;
+
+    background-image: linear-gradient(to top left, rgba($color-primary-light-2, 0.5), rgba($color-primary-dark-2, 0.5)), url(../../img/students_studying.jpeg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    @media only screen and (max-width: $bp-largest) {
+        max-width: unset;
+        width: 100%;
+    }
+}
+
+
+.header {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+
+    height: 100%;
+    background-color: rgba($color-primary-light-1, 0.10);
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: repeat(2, 1fr);
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+.navigation {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+
+    width: 120rem;
+    height: 5rem;
+    background-color: $color-primary-light-2;
+    z-index: 1000;
+
+    position: relative;
+
+    @media only screen and (max-width: $bp-largest) {
+        width: 100%;
+    }
+}
+
+.container {
+    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+
+    margin-top: 5rem;
+    //height: 80rem; // REMOVE LATER
+    background-color: $color-primary-dark-2;
+
+    display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr)); // May change it later (?)
+    grid-template-columns: 66% 32%;
+    grid-gap: 2%;
+
+    padding: 3rem;
+
+    @media only screen and (max-width: $bp-small) {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+
+        & > * {
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+.footer {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+
+    //height: 35rem;
+    background-color: $color-primary-light-1;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(5rem, max-content));
+}

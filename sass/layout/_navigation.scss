@@ -1,0 +1,197 @@
+.navbar-fixed {
+    position: fixed;
+    box-shadow: 0 1rem 1rem rgba($color-black, 0.15);
+    top: 0;
+}
+
+.navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem;
+
+    &-menu {
+        color: $color-white;
+
+        &-icon {
+            position: relative;
+            margin-top: 1rem;
+            top: 0.1rem;
+
+            &,
+            &::before,
+            &::after {
+                display: inline-block;
+                width: 1.4rem;
+                height: 2px;
+                background-color: currentColor;
+            }
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+            }
+
+            &::before{
+                top: -0.5rem;
+            }
+
+            &::after{
+                top: -1rem;
+            }
+        }
+
+        &-button {
+            color: currentColor;
+            font-size: 1.3rem;
+            font-weight: 500;
+            padding: 0.7rem 1.3rem;
+            background-color: $color-primary-dark-2;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+
+            &:hover {
+                background-color: $color-primary-dark-1;
+            }
+        }
+    }
+
+    &-list {
+        @media only screen and (max-width: $bp-xsmall) {
+            display: none;
+        }
+
+        display: flex;
+        list-style: none;
+
+        & > * {
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+        }
+
+        &__item {
+            color: $color-primary-dark-2;
+            
+
+            &--link {
+                display: flex;
+                align-items: center;
+                height: 100%;
+                font-size: 1.6rem;
+
+                &:link,
+                &:visited {
+                    text-decoration: none;
+                    color: inherit;
+                    transition: all 0.2s;
+                }
+            }
+
+            &--icon {
+                height: 2rem;
+                width: 2rem;
+                margin-right: 5px;
+                fill: $color-primary-dark-2;
+                transition: all 0.2s;
+            }
+
+            &:hover {
+                color: $color-complement-dark-1;
+            }
+
+            &:hover &--icon {
+                fill: $color-complement-dark-1;
+            }
+        }
+    }
+}
+
+.sidedrawer {
+    display: block;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+
+    height: calc(100vh - 5rem);
+    width: 0;
+    background-color: $color-primary-dark-1;
+    transform-origin: left;
+    // transform: translateX(-10rem);
+    transition: all 0.2s ease-out;
+
+    &-list {
+        list-style: none;
+        width: 100%;
+        transform-origin: left;
+        transform: scaleX(0);
+        transition-duration: 0.1s;
+
+        &__item {
+            position: relative;
+
+            &--small-screen {
+                @media only screen and (min-width: $bp-xsmall) {
+                    display: none;
+                }
+            }
+
+            &--link {
+                display: flex;
+                align-items: center;
+                padding: 2rem 1rem;
+
+                &:link, &:visited {
+                    text-decoration: none;
+                    font-size: 1.6rem;
+                    color: $color-white;
+                }
+
+                &-icon {
+                    width: 2rem;
+                    height: 2rem;
+
+                    fill: $color-white;
+                    margin-right: 1.3rem;
+                }
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 3px;
+                background-color: rgba($color-secondary-dark-2, 0.3);
+                transform: scaleY(0);
+                transition: transform 0.2s, 
+                            width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+                            height 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+                            background-color 0.1s;
+                z-index: -10;
+            }
+
+            &:hover::before {
+                transform: scaleX(1);
+                width: 100%;
+            }
+        }
+    }
+
+    &-open {
+        // display: block !important;
+        // transform: translateX(0);
+        box-shadow: 0.5rem 0 1rem rgba($color-black, 0.15);
+        width: 22rem;
+
+        & > * {
+            transition-delay: 0.2s;
+            transform: scale(1);
+        }
+    }
+}

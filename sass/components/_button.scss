@@ -1,0 +1,88 @@
+.btn {
+    display: inline-block;
+    font-size: 1.6rem;
+    padding: 1.5rem 5rem 1.5rem 4rem;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+
+    border: none;
+    cursor: pointer;
+
+    &-primary {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+
+    &::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 2.2rem;
+        right: 3.5rem;
+        border-right: 2px solid $color-white;
+        border-bottom: 2px solid $color-white;
+        height: 5px;
+        width: 5px;
+        transform: rotateZ(-45deg);
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.4s;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+
+    &:active, &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+    }
+}
+
+.text-button {
+    &:link,
+    &:visited {
+        display: inline-block;
+        padding: 3px;
+        color: $color-complement-dark-1;
+        font-size: 1.5rem;
+        text-decoration: none;
+        border-bottom: 1px solid $color-complement-dark-1;
+        transition: all 0.2s;
+        backface-visibility: hidden;
+    }
+
+    &:hover {
+        color: $color-white;
+        background-color: $color-complement-dark-1;
+        transform: translateY(-2px);
+        box-shadow: 0.5rem 1rem 1rem rgba($color-black, 0.15);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0.25rem 0.5rem 0.5rem rgba($color-black, 0.15);
+    }
+}

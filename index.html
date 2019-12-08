@@ -1,0 +1,478 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>easElearning</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" type="image/png" href="./img/icon.png">
+</head>
+<body class="body">
+
+    <header class="header">
+        <div class="header-brand">
+            <div class="heading-primary">
+                <span class="heading-primary--main">eas<span class="heading-primary--main__out">E</span>-</span>
+                <span class="heading-primary--sub">learning</span>
+            </div>
+        </div>
+        
+        <div class="header-slogan" id="slogan-container">
+            <div class="header-slogan__entity header-slogan__entity--shown">
+                <div class="heading-tertiary u-margin-bottom-small">Best decision of my life!</div>
+                <p class="header-slogan__entity--paragraph">
+                    After having been stuck on a dead end job, I finally stepped up,
+                    and transformed my hobby into a profession! All thanks to easElearning!
+                </p>
+            </div>
+            <div class="header-slogan__entity">
+                <div class="heading-tertiary u-margin-bottom-small">Learning at my own pace!</div>
+                <p class="header-slogan__entity--paragraph">
+                    The course work is designed in such a way that it lets me decide 
+                    the pacing, so I never felt stuck, at all! It is GREAT!
+                </p>
+            </div>
+            <div class="header-slogan__entity">
+                <div class="heading-tertiary u-margin-bottom-small">Very well designed courses!</div>
+                <p class="header-slogan__entity--paragraph">
+                    easElearning provides extremely well structed courses, and 
+                    at very reasonable prices! The content is not overwhelming, and 
+                    it scales up in difficulty and challenge it provides systematically.
+                </p>
+            </div>
+        </div>
+
+        <div class="header-image" id="img-container">
+            <div class="header-image__entity header-image__entity--fadeIn">
+                <img src="./img//person_img_1.png" alt="person_img_1" class="header-image__entity--img">
+            </div>
+            <div class="header-image__entity">
+                <img src="./img//person_img_2.png" alt="person_img_1" class="header-image__entity--img">
+            </div>
+            <div class="header-image__entity">
+                <img src="./img//person_img_3.png" alt="person_img_1" class="header-image__entity--img">
+            </div>
+        </div>
+    </header>
+
+    <div class="navigation" id="navigation">
+        <nav class="navbar">
+            <div class="navbar-menu">
+                <button class="navbar-menu-button" id="side_drawer_toggle">
+                    <span class="navbar-menu-icon"></span>
+                    Menu
+                </button>
+            </div>
+            <ul class="navbar-list">
+                <li class="navbar-list__item">
+                    <a href="#" class="navbar-list__item--link">
+                        <svg class="navbar-list__item--icon">
+                            <use xlink:href="./img/sprite.svg#icon-home3"></use>
+                        </svg>
+                        Home
+                    </a>
+                </li>
+                <li class="navbar-list__item">
+                    <a href="#" class="navbar-list__item--link">
+                        <svg class="navbar-list__item--icon">
+                            <use xlink:href="./img/sprite.svg#icon-user-add"></use>
+                        </svg>
+                        Register
+                    </a>
+                </li>
+                <li class="navbar-list__item">
+                    <a href="#" class="navbar-list__item--link">
+                        <svg class="navbar-list__item--icon">
+                            <use xlink:href="./img/sprite.svg#icon-lock-closed"></use>
+                        </svg>
+                        Log In
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="sidedrawer" id="sidedrawer">
+            <!-- SMALL SCREEN ONLY -->
+            <ul class="sidedrawer-list">
+                <li class="sidedrawer-list__item sidedrawer-list__item--small-screen">
+                    <a href="#" class="sidedrawer-list__item--link">
+                        <svg class="sidedrawer-list__item--link-icon">
+                            <use xlink:href="./img/sprite.svg#icon-home3"></use>
+                        </svg>
+                        <span class="sidedrawer-list__item--link-text">Home</span>
+                    </a>
+                </li>
+                <li class="sidedrawer-list__item sidedrawer-list__item--small-screen">
+                    <a href="#" class="sidedrawer-list__item--link">
+                        <svg class="sidedrawer-list__item--link-icon">
+                            <use xlink:href="./img/sprite.svg#icon-user-add"></use>
+                        </svg>
+                        <span class="sidedrawer-list__item--link-text">Register</span>
+                    </a>
+                </li>
+                <li class="sidedrawer-list__item sidedrawer-list__item--small-screen">
+                    <a href="#" class="sidedrawer-list__item--link">
+                        <svg class="sidedrawer-list__item--link-icon">
+                            <use xlink:href="./img/sprite.svg#icon-lock-closed"></use>
+                        </svg>
+                        <span class="sidedrawer-list__item--link-text">Login</span>
+                    </a>
+                </li>
+                <!-- SMALL SCREEN ONLY -->
+
+                <li class="sidedrawer-list__item">
+                    <a href="#" class="sidedrawer-list__item--link">
+                        <svg class="sidedrawer-list__item--link-icon">
+                            <use xlink:href="./img/sprite.svg#icon-map"></use>
+                        </svg>
+                        <span class="sidedrawer-list__item--link-text">About easElearning</span>
+                    </a>
+                </li>
+                <li class="sidedrawer-list__item">
+                    <a href="#" class="sidedrawer-list__item--link">
+                        <svg class="sidedrawer-list__item--link-icon">
+                            <use xlink:href="./img/sprite.svg#icon-edit-copy"></use>
+                        </svg>
+                        <span class="sidedrawer-list__item--link-text">Student Registration</span>
+                    </a>
+                </li>
+                <li class="sidedrawer-list__item">
+                    <a href="#" class="sidedrawer-list__item--link">
+                        <svg class="sidedrawer-list__item--link-icon">
+                            <use xlink:href="./img/sprite.svg#icon-tag"></use>
+                        </svg>
+                        <span class="sidedrawer-list__item--link-text">Pricing</span>
+                    </a>
+                </li>
+                <li class="sidedrawer-list__item">
+                    <a href="#" class="sidedrawer-list__item--link">
+                        <svg class="sidedrawer-list__item--link-icon">
+                            <use xlink:href="./img/sprite.svg#icon-question"></use>
+                        </svg>
+                        <span class="sidedrawer-list__item--link-text">FAQ and Help</span>
+                    </a>
+                </li>
+                <li class="sidedrawer-list__item">
+                    <a href="#" class="sidedrawer-list__item--link">
+                        <svg class="sidedrawer-list__item--link-icon">
+                            <use xlink:href="./img/sprite.svg#icon-library"></use>
+                        </svg>
+                        <span class="sidedrawer-list__item--link-text">easElearning for Institutions</span>
+                    </a>
+                </li>
+                <li class="sidedrawer-list__item">
+                    <a href="#" class="sidedrawer-list__item--link">
+                        <svg class="sidedrawer-list__item--link-icon">
+                            <use xlink:href="./img/sprite.svg#icon-network"></use>
+                        </svg>
+                        <span class="sidedrawer-list__item--link-text">Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="container">
+        <section class="main-content__column--1">
+            <section class="card">
+                <h2 class="card-heading u-margin-bottom-small">easElearning Computer Science Education Program</h2>
+
+                <section class="auth-section u-margin-bottom-large">
+                    <h2 class="section-heading u-center-text">easElearning Courses Login</h2>
+
+                    <p class="auth-section__paragraph u-center-text u-margin-top-small u-margin-bottom-medium">
+                        If you have enrolled on to one of our Web Developer Education Courses, 
+                        you can access it by logging-in or registering here:
+                    </p>
+
+                    <div class="auth-section__cta  u-center-text">
+                        <button class="btn btn-primary">Register</button>
+                        <button class="btn btn-primary">Login</button>
+                    </div>
+                </section>
+
+                <section class="courses-section u-margin-top-medium">
+                    <h2 class="section-heading u-center-text">
+                        Courses we offer
+                    </h2>
+
+                    <div class="course__teaser course__teaser--1 u-margin-top-medium">
+                        <figure class="course__teaser--shape">
+                            <img src="./img/course_1.jpeg" alt="Python course image" class="course__teaser--image">
+                            <figcaption class="course__teaser--caption">
+                                <img src="./img/python.png" alt="python-icon" class="course__teaser--caption-icon">
+                            </figcaption>
+                        </figure>
+                        <div class="course__teaser--text">
+                            <h2 class="course__teaser--text-heading u-margin-bottom-small">
+                                Advanced Python Course
+                            </h2>
+                            <p class="course__teaser--text-paragraph">
+                                Ideal for the ones who have some familiarity of Python, and want to
+                                dive deeper by exposing themselves to development of practical applications.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="course__teaser course__teaser--2 u-margin-top-medium">
+                        <figure class="course__teaser--shape">
+                            <img src="./img/course_2.jpeg" alt="react course image" class="course__teaser--image">
+                            <figcaption class="course__teaser--caption">
+                                <img src="./img/react.png" alt="react-icon" class="course__teaser--caption-icon">
+                            </figcaption>
+                        </figure>
+                        <div class="course__teaser--text">
+                            <h2 class="course__teaser--text-heading u-margin-bottom-small">
+                                React JS
+                            </h2>
+                            <p class="course__teaser--text-paragraph">
+                                React makes it painless to create interactive UIs. With this course,
+                                learn React from scratch, and build beautiful web apps by creating
+                                your own little components and composing them.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="course__teaser course__teaser--3 u-margin-top-medium">
+                        <figure class="course__teaser--shape">
+                            <img src="./img/course_3.jpeg" alt="react course image" class="course__teaser--image">
+                            <figcaption class="course__teaser--caption">
+                                <img src="./img/webdevstack.png" alt="webdev-stack-icon" class="course__teaser--caption-icon">
+                            </figcaption>
+                        </figure>
+                        <div class="course__teaser--text">
+                            <h2 class="course__teaser--text-heading u-margin-bottom-small">
+                                HTML | CSS | JAVASCRIPT
+                            </h2>
+                            <p class="course__teaser--text-paragraph">
+                                This is an ideal course for those who want to build professional, and
+                                career boosting web sites. Learn HTML, CSS and Javascript from scratch
+                                and get your web developer journey started!
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="cta-section u-margin-top-large u-margin-bottom-medium">
+                    <h2 class="section-heading u-center-text">
+                        Experience the future of e-learning!
+                    </h2>
+
+                    <div class="cta-section__text u-center-text u-margin-top-small">
+                        Register for a free easElearning account. Log in for more information 
+                        and you can also try a FREE Demo Lecture to get a feel!
+                    </div>
+
+                    <div class="cta-section__cta u-center-text u-margin-top-medium">
+                        <button class="btn btn-primary">Register for free!</button>
+                    </div>
+                </section>
+            </section>
+
+            <section class="more-info-section">
+                <div class="card">
+                    <h2 class="card-heading u-margin-bottom-small">easElearning Approach</h2>
+                    <p class="card-paragraph u-margin-bottom-small">
+                        <span>
+                            easElearning is the world’s one of the first comprehensive, blended online 
+                            education program in an IT sub-speciality - web development.
+                        </span>
+
+                        <span>
+                            The courses are designed to meet the demands of today's aspiring web developer
+                            trainees in terms of educational rigour, quality and innovation, as well as 
+                            current expectations of convenience, flexibility and cost.
+                        </span>
+                    </p>
+                    <div class="card-cta">
+                        <a href="#" class="text-button">View more &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2 class="card-heading u-margin-bottom-small">easElearning for Institutions</h2>
+                    <p class="card-paragraph u-margin-bottom-small">
+                        <span>
+                            easElearning's background is in academic computer science education and with the aim of improving
+                            the quality, cost and convenience of the education of developers, it is open to collaboration and 
+                            partnership with academic and other appropriate institutions.
+                        </span>
+
+                        <span>
+                            There is a range of possibilities for easElearning to tailor its platform or 
+                            courses to an institution’s specific needs and requirements.
+                        </span>
+                    </p>
+                    <div class="card-cta">
+                        <a href="#" class="text-button">View more &rarr;</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="main-content__column--2">
+            <section class="announcements u-margin-bottom-small">
+                <header class="announcements-header">
+                    <h2 class="announcements-heading">
+                        <svg class="announcements-heading__icon">
+                            <use xlink:href="./img/sprite.svg#icon-news-paper"></use>
+                        </svg>
+                        <span class="announcements-heading__text">
+                            News and Announcements
+                        </span>
+                    </h2>
+                </header>
+                <div class="announcements-body u-margin-top-small">
+                    <h2 class="announcements-body-heading">Advanced Python Course</h2>
+                    <p class="announcements-body-date">21 Nov 2019</p>
+                    <p class="announcements-body-paragraph u-margin-top-small u-margin-bottom-small">
+                        After a short period in Early Access, we're pleased to announce the launch of a new program, 
+                        tailored for intermediate level python programmers and hobbyists: Advanced Python Course. A really
+                        well suited course for those who want to expand their horizon to the practical side of programming.
+                        With lots of real life cases as well!
+                        Find out about this <a href="">course</a>.
+                    </p>
+                </div>
+                <div class="announcements-cta">
+                    <h2 class="announcements-cta__heading u-margin-bottom-small">Subscribe to our Newsletter!</h2>
+                    <a href="#" class="text-button">Subscribe &rarr;</a>
+                </div>
+            </section>
+
+            <div class="card">
+                <h2 class="card-heading u-margin-bottom-small">easElearning for Institutions</h2>
+                <p class="card-paragraph u-margin-bottom-small">
+                    In easElearning, collaboration and partnership with universities, 
+                    research institutes and learned societies are encouraged.
+                </p>
+                <div class="card-cta">
+                    <a href="#" class="text-button">More information &rarr;</a>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="card-heading u-margin-bottom-small">Frequently Asked Questions (FAQs)</h2>
+                <p class="card-paragraph u-margin-bottom-small">
+                    To learn more about easElearning, the courses and services provided;
+                    please take a look at the FAQ page.
+                </p>
+                <div class="card-cta">
+                    <a href="#" class="text-button">FAQs &rarr;</a>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="card-heading u-margin-bottom-small">Contact easElearning</h2>
+                <p class="card-paragraph u-margin-bottom-small">
+                    If you have more to talk about, suggestions, wishes and such; you
+                    can use the contact form to get in touch with us!
+                </p>
+                <div class="card-cta">
+                    <a href="#" class="text-button">Contact &rarr;</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__landing">
+            <div class="footer__landing--column">
+                <h2 class="footer__landing--column-heading u-margin-bottom-small">easElearning Platform</h2>
+                <ul class="footer__landing--column-list">
+                    <li class="footer__landing--column-list-item">
+                        <a href="#" class="footer__landing--column-link">About easElearning</a>
+                    </li>
+                    <li class="footer__landing--column-list-item">
+                        <a href="#" class="footer__landing--column-link">The easElearning Approach</a>
+                    </li>
+                    <li class="footer__landing--column-list-item">
+                        <a href="#" class="footer__landing--column-link">FAQs and Help</a>
+                    </li>
+                    <li class="footer__landing--column-list-item">
+                        <a href="#" class="footer__landing--column-link">Contact easElearning</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__landing--column">
+                <h2 class="footer__landing--column-heading u-margin-bottom-small">easElearning Courses</h2>
+                <ul class="footer__landing--column-list">
+                    <li class="footer__landing--column-list-item">
+                        <a href="#" class="footer__landing--column-link">Web Development Program</a>
+                    </li>
+                    <li class="footer__landing--column-list-item">
+                        <a href="#" class="footer__landing--column-link">Diploma in Information Technology</a>
+                    </li>
+                    <li class="footer__landing--column-list-item">
+                        <a href="#" class="footer__landing--column-link">Web Development Education Modules</a>
+                    </li>
+                    <li class="footer__landing--column-list-item">
+                        <a href="#" class="footer__landing--column-link">Web Developer Certificates</a>
+                    </li>
+                    <li class="footer__landing--column-list-item">
+                        <a href="#" class="footer__landing--column-link">Web Development Faculty</a>
+                    </li>
+                    <li class="footer__landing--column-list-item">
+                        <a href="#" class="footer__landing--column-link">Web Development Program Alumni</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__landing--column">
+                <h2 class="footer__landing--column-heading footer__landing--column-heading-contact u-margin-bottom-small">Contact easElearning</h2>
+                <address class="footer__landing--column-contact">
+                    <span class="footer__landing--column-contact--row">
+                        <svg class="footer__landing--column-contact--icon">
+                            <use xlink:href="./img/sprite.svg#icon-office"></use>
+                        </svg>
+                        easElearning Co. Ltd.
+                    </span>
+                    <span class="footer__landing--column-contact--row">
+                        <svg class="footer__landing--column-contact--icon">
+                            <use xlink:href="./img/sprite.svg#icon-road"></use>
+                        </svg>
+                        Unreal avenue, Matrix Business Center
+                    </span>
+                    <span class="footer__landing--column-contact--row">
+                        <svg class="footer__landing--column-contact--icon">
+                            <use xlink:href="./img/sprite.svg#icon-globe"></use>
+                        </svg>
+                        New Tristam, No: 666
+                    </span>
+                    <span class="footer__landing--column-contact--row">
+                        <svg class="footer__landing--column-contact--icon">
+                            <use xlink:href="./img/sprite.svg#icon-envelope-o"></use>
+                        </svg>
+                        <a href="#">Contact easElearning</a>
+                    </span>
+                </address>
+            </div>
+            
+        </section>
+
+        <section class="footer__copyright">
+            <div class="footer__copyright--text">
+                &copy; 2019 Berkay Senkoylu
+            </div>
+            <ul class="footer__copyright--items">
+                <li class="footer__copyright--item">
+                    <a href="#" class="footer__copyright--link">Home</a>
+                </li>
+                <li class="footer__copyright--item">
+                    <a href="#" class="footer__copyright--link">Sitemap</a>
+                </li>
+                <li class="footer__copyright--item">
+                    <a href="#" class="footer__copyright--link">Privacy</a>
+                </li>
+                <li class="footer__copyright--item">
+                    <a href="#" class="footer__copyright--link">Policies</a>
+                </li>
+                <li class="footer__copyright--item">
+                    <a href="#" class="footer__copyright--link">Terms & Conditions</a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
